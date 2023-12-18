@@ -22,20 +22,30 @@ function App() {
 
       <MovieList
       title="Action" 
-      filter="genre=action"
+      filter="genres=action, movies "
       carousel={true}
       speed={1500}
       duration={1000}
       />
       <MovieList
       title="Drama" 
-      filter="genre=drama"
+      filter="genre=crime"
       carousel={true}
        />
+        <MovieList
+       title="Adventure" 
+       filter="genres=adventure, family, comedy "
+       carousel={true}
+        />
 
       <MovieList
       title="Thriller" 
-      filter="genre=thriller" />
+      filter="genres =thriller, comedy " 
+      />
+      <MovieList
+      title="Thriller" 
+      filter="genre=sci-fi" 
+      />
 
     </div>
     <div className="text-white flex justify-center text-center text-lg py-4">

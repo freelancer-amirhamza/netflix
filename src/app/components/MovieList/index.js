@@ -41,13 +41,11 @@ const getMovies = async () => {
      setMovies(response.data.movies);
    setLoading(false)
   }, 1000)
- 
-  
 }
 
 useEffect(() => {
-  getMovies();
-},[]);
+  getMovies()
+}, []);
 
   return (
     <div className='my-12'>
